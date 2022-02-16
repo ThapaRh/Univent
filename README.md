@@ -22,6 +22,7 @@ WHAT IS UNIVENT/MERNSTACK?
   From your react app you send requests to node express app, then node express server which talks to database.
   
   React Components are functions, that return JSX, react element calls, or javascript class with render method.
+  React rerenders the UI when you update the state of the component
 
 HOW TO RUN THE WEB APPLICATION LOCALLY
   1) Download visual studio code
