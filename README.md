@@ -25,9 +25,11 @@ WHAT IS UNIVENT/MERNSTACK?
 
 HOW TO RUN THE WEB APPLICATION LOCALLY
   1) Download visual studio code
-  2) Pull the github repository to a folder
+  2) Pull the main github repository to a folder
   3) Open the folder where you put the web application code in visual studio code
   4) cd into the front end and in a separate terminal cd into the backend
   5) Run "npm install" in both the backend and frontend terminals
   6) run "npm start" from the backend and frontend terminals
   7) The web application should be running locally on your device
+
+
