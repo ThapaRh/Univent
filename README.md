@@ -1,7 +1,7 @@
 # Univent
 <img src="images/logo_OO_2022.png" width= "800" >
 
-WHAT IS UNIVENT/MERNSTACK?
+<b>WHAT IS UNIVENT/MERNSTACK? </b>
 
   <b> Brief Project Outline: </b>
   
@@ -27,7 +27,7 @@ WHAT IS UNIVENT/MERNSTACK?
   hosting we are going to use AWS ECR for container registry with ECS tasks to host and deploy our docker container.
 
   
-  What is the Mern Stack?
+  <b>What is the Mern Stack?</b>
   MongoDB: NoSQL Database which stores "Documents" in "Collections" (instead of "records: in "tables" as in SQL). Stores application data(users. products...) no enforcement of       schema or relation(can still build one if needed), better performance.
   
   Express: A node framework which simplifies writing server-side code and logic. Based on Node, but offers same functionalities and more. Middle-ware based, funnel requests         through functions, Includes routing view rendering and more(simplifies Node.js).
@@ -50,7 +50,7 @@ WHAT IS UNIVENT/MERNSTACK?
   React rerenders the UI when you update the state of the component
 
 
-HOW TO RUN THE WEB APPLICATION LOCALLY
+<b>HOW TO RUN THE WEB APPLICATION LOCALLY</b>
   1) Download visual studio code
   2) Pull the main github repository to a folder
   3) Open the folder where you put the web application code in visual studio code
