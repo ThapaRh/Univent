@@ -5,6 +5,7 @@ import Input from '../../shared/components/FormElements/Input';
 import Button from '../../shared/components/FormElements/Button';
 import {
   VALIDATOR_EMAIL,
+  VALIDATOR_MAV_EMAIL,
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE
 } from '../../shared/util/validators';
@@ -16,6 +17,7 @@ const Auth = () => {
   const auth = useContext(AuthContext);
   const [isLoginMode, setIsLoginMode] = useState(true);
 
+  //Set original
   const [formState, inputHandler, setFormData] = useForm(
     {
       email: {
@@ -81,8 +83,8 @@ const Auth = () => {
           id="email"
           type="email"
           label="E-Mail"
-          validators={[VALIDATOR_EMAIL()]}
-          errorText="Please enter a valid email address."
+          validators={[VALIDATOR_EMAIL(), VALIDATOR_MAV_EMAIL()]}
+          errorText="Please enter a valid mav email address."
           onInput={inputHandler}
         />
         <Input

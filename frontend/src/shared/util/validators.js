@@ -1,3 +1,4 @@
+//identifiers
 const VALIDATOR_TYPE_REQUIRE = 'REQUIRE';
 const VALIDATOR_TYPE_MINLENGTH = 'MINLENGTH';
 const VALIDATOR_TYPE_MAXLENGTH = 'MAXLENGTH';
@@ -5,9 +6,11 @@ const VALIDATOR_TYPE_MIN = 'MIN';
 const VALIDATOR_TYPE_MAX = 'MAX';
 const VALIDATOR_TYPE_EMAIL = 'EMAIL';
 const VALIDATOR_TYPE_FILE = 'FILE';
+const VALIDATOR_TYPE_MAV_EMAIL = 'MAVEMAIL';
 
 export const VALIDATOR_REQUIRE = () => ({ type: VALIDATOR_TYPE_REQUIRE });
 export const VALIDATOR_FILE = () => ({ type: VALIDATOR_TYPE_FILE });
+//minlength requires min length you want for string
 export const VALIDATOR_MINLENGTH = val => ({
   type: VALIDATOR_TYPE_MINLENGTH,
   val: val
@@ -19,7 +22,10 @@ export const VALIDATOR_MAXLENGTH = val => ({
 export const VALIDATOR_MIN = val => ({ type: VALIDATOR_TYPE_MIN, val: val });
 export const VALIDATOR_MAX = val => ({ type: VALIDATOR_TYPE_MAX, val: val });
 export const VALIDATOR_EMAIL = () => ({ type: VALIDATOR_TYPE_EMAIL });
+export const VALIDATOR_MAV_EMAIL = () => ({ type: VALIDATOR_TYPE_MAV_EMAIL });
 
+//takes a concrete value, and array of validators
+//loops through passed in action type of validators, and checks for different type of validators we got
 export const validate = (value, validators) => {
   let isValid = true;
   for (const validator of validators) {
@@ -40,6 +46,9 @@ export const validate = (value, validators) => {
     }
     if (validator.type === VALIDATOR_TYPE_EMAIL) {
       isValid = isValid && /^\S+@\S+\.\S+$/.test(value);
+    }
+    if (validator.type === VALIDATOR_TYPE_MAV_EMAIL) {
+      isValid = isValid && /^\S+@mavs.uta.edu$/.test(value);
     }
   }
   return isValid;

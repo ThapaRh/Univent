@@ -32,7 +32,7 @@ const NewPlace = () => {
     event.preventDefault();
     console.log(formState.inputs); // send this to the backend!
   };
-
+  //input form of type input and text area, passing in all these props, element is necessary prop.
   return (
     <form className="place-form" onSubmit={placeSubmitHandler}>
       <Input

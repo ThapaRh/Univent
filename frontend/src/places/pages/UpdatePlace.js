@@ -39,7 +39,15 @@ const DUMMY_PLACES = [
     creator: 'u2'
   }
 ];
-
+/* Hooks allow you to add various functionalities to function components,
+    useState()- hook allows us to register state which then is managed inside ofa  component, when state is changed, the component re-renders(re-evaulated and might be lead to re-rendering of DOM)
+    
+    useEffect() - does something different: It allows you to register some logic (i.e. a JS function) which will be executed when certain dependencies - which you define - change.
+    useEffect() re-evaluates the dependency values whenever the component in which you use useEffect() is re-evaluated (i.e. whenever the component's props or state changed).
+If the component is re-evaluated and the dependencies did NOT change, the logic in useEffect() won't run again.
+Important: The useEffect() logic re-runs AFTER the component (including its JSX code) was re-evaluated. That means, that the first execution of the useEffect() logic 
+(when a component mounts for the first time) will ALWAYS happen AFTER the component rendered for the first time.
+    */
 const UpdatePlace = () => {
   const [isLoading, setIsLoading] = useState(true);
   const placeId = useParams().placeId;
