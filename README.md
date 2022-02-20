@@ -9,7 +9,7 @@ WHAT IS UNIVENT/MERNSTACK?
   
   Detailed Project Outline:
   
-	Our project will be a web application for facilitating the organization and networking requirements that many UTA campus clubs have. There will be multiple stakeholders
+  Our project will be a web application for facilitating the organization and networking requirements that many UTA campus clubs have. There will be multiple stakeholders
   including administrators of said UTA organizations such as the president of the club, students who want to sign up and become members of the organizations, and an overall
   administrator of the networking site so that control can be handed between students as organizations administrative staff graduate and move on from UTA.
   The club administrators will be able to post events, manage members and create forms that will facilitate data entry. These forms will be for the purpose of signing up for
