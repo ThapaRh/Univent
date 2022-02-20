@@ -36,3 +36,6 @@ HOW TO RUN THE WEB APPLICATION LOCALLY
   7) The web application should be running locally on your device
 
 UML Diagrams
+                Use Case Diagram                          Class Diagram
+<img src="images/usecase diagram.png" width= "400" > <img src="images/classdiagram.png" width= "400" >
+
