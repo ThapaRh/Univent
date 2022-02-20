@@ -17,12 +17,12 @@ WHAT IS UNIVENT/MERNSTACK?
   visit and get information about that club. They will be able to fill out an application to join a club as well as sign up to partake in events that the club offers if they are
   members of a given club. They will also be able to take part in any opinion surveys and comment on posts that the administrators of clubs were to make. In addition, clubs that
   the students are members of would-be prioritized in their feed. Also, posts that are specific to the club that they are a member of would show up in their feed which would not
-  show up if they were not members. UTA administrators will have the ability to make new clubs, set new club administrators, and see all posts. There are no private posts that
-  UTA administrators would be unable to see. The UTA administrator feed will contain all posts from every club sorted by clubs with the most active members. They will also have
-  the ability to remove any student from any club and pass the responsibility of club president or any other club administrative position on to a different student.
-  For our tech stack, we decided to go with the MERN stack. We will use React as well as some CSS and possible animations for the front end. We will use Node/Express for the
-  back end, and MongoDB for our database needs. For the purpose of maintaining system consistency, we will use docker containers for development. When hosting we are going to
-  use AWS ECR for container registry with ECS tasks to host and deploy our docker container.
+  show up if they were not members. UTA administrators will have the ability to make new clubs, set new club administrators, and see all posts. 
+  There are no private posts that UTA administrators would be unable to see. The UTA administrator feed will contain all posts from every club sorted by clubs with the most
+  active members. They will also have the ability to remove any student from any club and pass the responsibility of club president or any other club administrative position on
+  to a different student. For our tech stack, we decided to go with the MERN stack. We will use React as well as some CSS and possible animations for the front end. We will use
+  Node/Express for the back end, and MongoDB for our database needs. For the purpose of maintaining system consistency, we will use docker containers for development. When
+  hosting we are going to use AWS ECR for container registry with ECS tasks to host and deploy our docker container.
 
   
   What is the Mern Stack?
