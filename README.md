@@ -37,5 +37,5 @@ HOW TO RUN THE WEB APPLICATION LOCALLY
 
 UML Diagrams
 
-<img src="images/usecase diagram.png" width= "300" > <img src="images/classdiagram.png" width= "300" >
+<img src="images/usecase diagram.png" width= "500" > <img src="images/classdiagram.png" width= "470" >
 
