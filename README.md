@@ -35,8 +35,8 @@ HOW TO RUN THE WEB APPLICATION LOCALLY
   6) run "npm start" from the backend and frontend terminals
   7) The web application should be running locally on your device
 
-UML Diagrams
-Use Case Diagram                                                    Class Diagram
+UML Diagrams:
+Use Case Diagram and Class Diagram
 
 <img src="images/usecase diagram.png" width= "500" > <img src="images/classdiagram.png" width= "467" >
 
