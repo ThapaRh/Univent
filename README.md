@@ -1,4 +1,6 @@
 # Univent
+https://i.gyazo.com/20b6de9a8b34ab155c5a982eb233ac27.png
+
 WHAT IS UNIVENT/MERNSTACK?
   Univent is a MERN stack webapplication.
   
@@ -32,3 +34,5 @@ HOW TO RUN THE WEB APPLICATION LOCALLY
   5) Run "npm install" in both the backend and frontend terminals
   6) run "npm start" from the backend and frontend terminals
   7) The web application should be running locally on your device
+
+UML Diagrams
