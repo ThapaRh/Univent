@@ -1,6 +1,5 @@
 # Univent
-https://i.gyazo.com/20b6de9a8b34ab155c5a982eb233ac27.png
-
+![UniventLogo](images/filename%logo_OO_2022.png
 WHAT IS UNIVENT/MERNSTACK?
   Univent is a MERN stack webapplication.
   
