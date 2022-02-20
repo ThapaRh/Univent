@@ -1,5 +1,5 @@
 # Univent
-![](images/filename%20logo_OO_2022.png
+![](images/logo_OO_2022.png)
 WHAT IS UNIVENT/MERNSTACK?
   Univent is a MERN stack webapplication.
   
