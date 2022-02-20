@@ -4,9 +4,11 @@
 WHAT IS UNIVENT/MERNSTACK?
 
   Brief Project Outline:
+  
   Univent is a MERN stack webapplication which allows UT-Arlington students and faculty the ability to view, create, and join organizations on campus.
   
   Detailed Project Outline:
+  
 	Our project will be a web application for facilitating the organization and networking requirements that many UTA campus clubs have. There will be multiple stakeholders
   including administrators of said UTA organizations such as the president of the club, students who want to sign up and become members of the organizations, and an overall
   administrator of the networking site so that control can be handed between students as organizations administrative staff graduate and move on from UTA.
