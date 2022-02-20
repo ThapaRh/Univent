@@ -28,6 +28,7 @@
 
   
   <b>What is the Mern Stack?</b>
+  
   MongoDB: NoSQL Database which stores "Documents" in "Collections" (instead of "records: in "tables" as in SQL). Stores application data(users. products...) no enforcement of       schema or relation(can still build one if needed), better performance.
   
   Express: A node framework which simplifies writing server-side code and logic. Based on Node, but offers same functionalities and more. Middle-ware based, funnel requests         through functions, Includes routing view rendering and more(simplifies Node.js).
@@ -51,6 +52,7 @@
 
 
 <b>HOW TO RUN THE WEB APPLICATION LOCALLY</b>
+
   1) Download visual studio code
   2) Pull the main github repository to a folder
   3) Open the folder where you put the web application code in visual studio code
@@ -60,7 +62,8 @@
   7) The web application should be running locally on your device
 
 
-UML Diagrams:
+<b>UML Diagrams: </b>
+
 Use Case Diagram and Class Diagram
 
 <img src="images/usecase diagram.png" width= "500" > <img src="images/classdiagram.png" width= "467" >
