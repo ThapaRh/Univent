@@ -71,7 +71,9 @@ const App = () => {
       </Switch>
     );
   }
-
+  //everything we wrap <AuthContext.Provide value(we want to manage)> in gets access to it
+  //when logged in will display logout button, when not logged in shows login button
+  //all the components listening to the context(not wrapped) will re-render it
   return (
     <AuthContext.Provider
       value={{ isLoggedIn: isLoggedIn, login: login, logout: logout }}

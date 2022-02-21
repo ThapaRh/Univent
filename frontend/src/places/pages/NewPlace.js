@@ -9,7 +9,9 @@ import {
 import { useForm } from '../../shared/hooks/form-hook';
 import './PlaceForm.css';
 
+//intial state
 const NewPlace = () => {
+  // calls form-hook.js and sends in (intialvalue, validity), returns formState and inputHandler, logic lives inside form-hook.js
   const [formState, inputHandler] = useForm(
     {
       title: {
@@ -28,8 +30,9 @@ const NewPlace = () => {
     false
   );
 
+  //to handle form submission
   const placeSubmitHandler = event => {
-    event.preventDefault();
+    event.preventDefault(); //browser default: when submit a form sends a request and crashes single page application
     console.log(formState.inputs); // send this to the backend!
   };
   //input form of type input and text area, passing in all these props, element is necessary prop.
@@ -42,7 +45,7 @@ const NewPlace = () => {
         label="Title"
         validators={[VALIDATOR_REQUIRE()]}
         errorText="Please enter a valid title."
-        onInput={inputHandler}
+        onInput={inputHandler}  //calls input handler in input.js
       />
       <Input
         id="description"

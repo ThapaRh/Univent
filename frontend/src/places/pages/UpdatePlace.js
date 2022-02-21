@@ -39,7 +39,7 @@ const DUMMY_PLACES = [
     creator: 'u2'
   }
 ];
-/* Hooks allow you to add various functionalities to function components,
+/* Hooks allow you to add various functionalities to function components. HOOKS MUST ONLY BE USED IN DIRECTLY IN COMPONENT FUNCTION(NOT IN loops, other functions, ifs, then block)
     useState()- hook allows us to register state which then is managed inside ofa  component, when state is changed, the component re-renders(re-evaulated and might be lead to re-rendering of DOM)
     
     useEffect() - does something different: It allows you to register some logic (i.e. a JS function) which will be executed when certain dependencies - which you define - change.
@@ -50,7 +50,7 @@ Important: The useEffect() logic re-runs AFTER the component (including its JSX 
     */
 const UpdatePlace = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const placeId = useParams().placeId;
+  const placeId = useParams().placeId; //gets params from the url, the id of the place, extracted from  <Rout path="/places/:placeId">
 
   const [formState, inputHandler, setFormData] = useForm(
     {
@@ -66,11 +66,11 @@ const UpdatePlace = () => {
     false
   );
 
-  const identifiedPlace = DUMMY_PLACES.find(p => p.id === placeId);
+  const identifiedPlace = DUMMY_PLACES.find(p => p.id === placeId); //finds a place from dummy places with id of url
 
-  useEffect(() => {
-    if (identifiedPlace) {
-      setFormData(
+  useEffect(() => { //only trigger when dependencies setFormdata or identifiedPlace is triggered, setformdata will not trigger cause wrapped with usecallback
+    if (identifiedPlace) { //checking to see if we have that specific place (the url)
+      setFormData(  //changing the form data, updating
         {
           title: {
             value: identifiedPlace.title,
@@ -92,7 +92,7 @@ const UpdatePlace = () => {
     console.log(formState.inputs);
   };
 
-  if (!identifiedPlace) {
+  if (!identifiedPlace) { //if the place wasn't found
     return (
       <div className="center">
         <Card>
@@ -102,7 +102,7 @@ const UpdatePlace = () => {
     );
   }
 
-  if (isLoading) {
+  if (isLoading) { //if we don't have formState.inputs.title.value then we don't update yet
     return (
       <div className="center">
         <h2>Loading...</h2>
@@ -110,6 +110,7 @@ const UpdatePlace = () => {
     );
   }
 
+  //return a form for updating a place
   return (
     <form className="place-form" onSubmit={placeUpdateSubmitHandler}>
       <Input
@@ -119,9 +120,9 @@ const UpdatePlace = () => {
         label="Title"
         validators={[VALIDATOR_REQUIRE()]}
         errorText="Please enter a valid title."
-        onInput={inputHandler}
-        initialValue={formState.inputs.title.value}
-        initialValid={formState.inputs.title.isValid}
+        onInput={inputHandler}  //inputHandler is returned from form-hook.js
+        initialValue={formState.inputs.title.value} //old value
+        initialValid={formState.inputs.title.isValid} 
       />
       <Input
         id="description"

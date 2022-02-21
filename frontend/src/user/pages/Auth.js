@@ -13,14 +13,14 @@ import { useForm } from '../../shared/hooks/form-hook';
 import { AuthContext } from '../../shared/context/auth-context';
 import './Auth.css';
 
-const Auth = () => {
-  const auth = useContext(AuthContext);
+const Auth = () => {  
+  const auth = useContext(AuthContext); 
   const [isLoginMode, setIsLoginMode] = useState(true);
 
-  //Set original
+  //initial
   const [formState, inputHandler, setFormData] = useForm(
     {
-      email: {
+      email: {  
         value: '',
         isValid: false
       },
@@ -29,7 +29,7 @@ const Auth = () => {
         isValid: false
       }
     },
-    false
+    false  //initially the form is invalid
   );
 
   const switchModeHandler = () => {
@@ -53,10 +53,10 @@ const Auth = () => {
         false
       );
     }
-    setIsLoginMode(prevMode => !prevMode);
+    setIsLoginMode(prevMode => !prevMode);  //switches to true if false and vice versa
   };
 
-  const authSubmitHandler = event => {
+  const authSubmitHandler = event => { //onsubmit
     event.preventDefault();
     console.log(formState.inputs);
     auth.login();
@@ -67,7 +67,7 @@ const Auth = () => {
       <h2>Login Required</h2>
       <hr />
       <form onSubmit={authSubmitHandler}>
-        {!isLoginMode && (
+        {!isLoginMode && (  //signup
           <Input
             element="input"
             id="name"
@@ -101,10 +101,10 @@ const Auth = () => {
         </Button>
       </form>
       <Button inverse onClick={switchModeHandler}>
-        SWITCH TO {isLoginMode ? 'SIGNUP' : 'LOGIN'}
+        SWITCH TO {isLoginMode ? 'SIGNUP' : 'LOGIN'}  
       </Button>
     </Card>
   );
 };
-
+//
 export default Auth;

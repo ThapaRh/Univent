@@ -38,20 +38,20 @@ const inputReducer = (state, action) => {
 };
 
 //useReducer can take a second argument optionally: initial state, this state is where value is set to empty is touched is false, and valid is false. Usereducer and usestate 
-//return array with 2 elements: current state, dispatch function(we can call, how we dispatch actions to the reducer function which will run through the function and return a new 
-//state which update input state and re-render the component)
+//return array with 2 elements: current state, dispatch function(which we can call, how we dispatch actions to the reducer function which will run through the function and 
+//return a new state which updates input state and re-renders the component)
 const Input = props => {
   const [inputState, dispatch] = useReducer(inputReducer, {
-    value: props.initialValue || '',
+    value: props.initialValue || '',  //set to empty if props.intialvalue not provided
     isTouched: false,
-    isValid: props.initialValid || false
+    isValid: props.initialValid || false //set to false if props.initialValid is not provided
   });
 
   const { id, onInput } = props;
   const { value, isValid } = inputState;
 
   useEffect(() => {
-    onInput(id, value, isValid) // passes back this information to wh
+    onInput(id, value, isValid) // passes back this information to where we used the input component, whenever one of the dependencies called V this funtion triggered
   }, [id, value, isValid, onInput]); //only certain dependecies trigger this function: props.id, props.onInput, inputState.value, inputState.isValid
 
   //triggered whenever the user enters something. event we get automatically on change event, event.target is the event element on which this event was triggered, 
