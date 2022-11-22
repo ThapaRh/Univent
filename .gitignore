@@ -1,0 +1,4 @@
+*.png
+*package-lock*
+*/notes
+*/node_modules

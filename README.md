@@ -36,7 +36,7 @@
   React: a client-side browser library which allows you to build highly reactive user interfaces (FrontEnd). Renders UI with Dynamic data, Handles user input, Comunicates with       backend. Browser side javascript Library for building user interfaces. Uses lots of components to build a program
   
   Node: a server-side runtime(javascript on serverside alternative to PHP). Listen to requests and send responses, execute server-side logic, interact with database and files(used 
-  alongside express.
+  alongside express.) Allows us to run javascript outside the browser.
 
   Ajax requests and responses from client side React to backend server without reloading the page on the client(data: JSON format)
   
